@@ -48,7 +48,7 @@ char Precede(char t1, char t2) {
 			cout << "ERROR2" << endl;
 			exit(0);
 		default:
-			f='>';
+			f = '>';
 		}
 		break;
 	case '=':
@@ -84,7 +84,7 @@ int In(char c) {
 		return 1;
 	default:
 		return 0;
-		
+
 	}
 }
 
@@ -124,11 +124,11 @@ float Val_Exp(char* exp) {
 	OP.Push('=');
 	c = *exp++;
 	x = OP.GetTop();
-	while (c!='='||x!='=')
+	while (c != '=' || x != '=')
 	{
 		//是7种运算符之一
 		if (In(c)) {
-			switch (Precede(x,c))
+			switch (Precede(x, c))
 			{
 				//栈顶元素优先权低
 			case '<':
@@ -228,7 +228,7 @@ float Val_PostExp(char* postexp) {
 	char c;
 	SqStack<float>OD(20);
 	c = *postexp++;
-	while (c!='\0')
+	while (c != '\0')
 	{
 		//为操作数
 		if ((c >= '0' && c <= '9') || c == '.') {

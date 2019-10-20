@@ -29,10 +29,10 @@ int main() {
 		try {
 			e = Lb.GetElem(i);
 		}
-			
+
 		catch (char* err) {
 			cout << err << endl;
-		}			
+		}
 		if (!La.Locate(e)) {
 			try {
 				La.Insert(++la_len, e);

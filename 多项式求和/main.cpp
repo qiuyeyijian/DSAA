@@ -51,7 +51,7 @@ Poly::~Poly()
 void Poly::Disp() {
 	PolyNode* p;
 	p = head->next;
-	while (p!=NULL)
+	while (p != NULL)
 	{
 		cout << p->coef << "x^" << p->exp << '\t';
 		p = p->next;
@@ -80,11 +80,11 @@ void Poly::Sort() {
 		r = p->next;
 		p->next = NULL;
 		p = r;
-		while (p!=NULL)
+		while (p != NULL)
 		{
 			r = p->next;
 			q = head;
-			while (q->next!=NULL&& q->next->exp<p->exp)
+			while (q->next != NULL && q->next->exp < p->exp)
 			{
 				q = q->next;
 			}
@@ -102,13 +102,13 @@ void Poly::Add(Poly LB) {
 	qa = pa->next;
 	pb = LB.head;
 	qb = pb->next;
-	while (qa!=NULL&&qb!=NULL)
+	while (qa != NULL && qb != NULL)
 	{
 		if (qa->exp < qb->exp) {
 			pa = qa;
 			qa = qa->next;
 		}
-		else if(qa->exp>qb->exp)
+		else if (qa->exp > qb->exp)
 		{
 			pb->next = qb->next;
 			qb->next = qa;
@@ -119,7 +119,7 @@ void Poly::Add(Poly LB) {
 		else
 		{
 			sum = qa->coef + qb->coef;
-			if (sum==0)
+			if (sum == 0)
 			{
 				pa->next = qa->next;
 				delete qa;

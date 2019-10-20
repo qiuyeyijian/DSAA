@@ -72,7 +72,7 @@ void LinkList<T>::Insert(int i, T e) {
 	int j = 0;
 	Node<T>* p;
 	p = Head;
-	while (p&&j<i-1)
+	while (p && j < i - 1)
 	{
 		p = p->next;
 		j++;
@@ -96,7 +96,7 @@ T LinkList<T>::Delete(int i) {
 	Node<T>* p, * q;
 	p = Head;
 	int j = 0;
-	while (p->next&&j<i-1)
+	while (p->next && j < i - 1)
 	{
 		p = p->next;
 		j++;
@@ -119,7 +119,7 @@ int LinkList<T>::Locate(T e) {
 	int j = 1;
 	Node<T>* p;
 	p = Head->next;
-	while (p&&p->data!=e)
+	while (p && p->data != e)
 	{
 		p = p->next;
 		j++;
@@ -138,7 +138,7 @@ T LinkList<T>::GetElem(int i) {
 	Node<T>* p;
 	p = Head->next;
 	int j = 1;
-	while (p&&j<i)
+	while (p && j < i)
 	{
 		p = p->next;
 		j++;
@@ -154,7 +154,7 @@ T LinkList<T>::GetElem(int i) {
 //²â±í¿Õ
 template<class T>
 int LinkList<T>::Empty() {
-	if (Head->next==NULL){
+	if (Head->next == NULL) {
 		return 1;
 	}
 	else
@@ -169,7 +169,7 @@ T LinkList<T>::prior(T e) {
 	Node<T>* p, * q;
 	p = Head;
 	q = p->next;
-	while (q&&q->data!=e){
+	while (q && q->data != e) {
 		p = q;
 		q = q->next;
 	}
@@ -187,7 +187,7 @@ int LinkList<T>::Length() {
 	int len = 0;
 	Node<T>* p;
 	p = Head;
-	while (p->next){
+	while (p->next) {
 		len++;
 		p = p->next;
 	}

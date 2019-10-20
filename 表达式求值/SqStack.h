@@ -99,7 +99,7 @@ void SqStack<T>::stacktop() {
 template<class T>
 void SqStack<T>::StackTranverse() {
 	int i = top;
-	while (i>=0)
+	while (i >= 0)
 	{
 		cout << base[i--] << '\t';
 	}

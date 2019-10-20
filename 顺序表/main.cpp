@@ -19,7 +19,7 @@ public:
 	int Length();
 	void ListDisp();
 private:
-	int *elem;
+	int* elem;
 	int length;
 	int listsize;
 };

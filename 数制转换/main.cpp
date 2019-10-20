@@ -21,7 +21,7 @@ void convert(T n, T m) {
 	}
 
 	cout << "转换为" << m << "进制数为：";
-	while (s.StackEmpty()){
+	while (s.StackEmpty()) {
 		try {
 			e = s.Pop();
 			if (e < 10)

@@ -15,7 +15,7 @@ int main() {
 		cout << "2-退出\n";
 		cout << "Enter choice:";
 		cin >> choice;
-		switch (choice){
+		switch (choice) {
 		case 1:
 			cout << "请输入要求阶乘的元素：";
 			cin >> n;
@@ -34,7 +34,7 @@ int main() {
 			break;
 		}
 
-	} while (choice!=2);
+	} while (choice != 2);
 
 
 	system("pause");

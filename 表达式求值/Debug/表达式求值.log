@@ -1,0 +1,4 @@
+﻿  main.cpp
+F:\DSAA\表达式求值\main.cpp(164,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\DSAA\表达式求值\main.cpp(242,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  表达式求值.vcxproj -> F:\DSAA\Debug\表达式求值.exe

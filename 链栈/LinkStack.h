@@ -84,7 +84,7 @@ template<class T>
 void LinkStack<T>::ClearStack() {
 	while (top)
 	{
-		Node<T>* q; 
+		Node<T>* q;
 		q = top;
 		top = top->next;
 		delete q;

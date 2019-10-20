@@ -42,7 +42,7 @@ int main() {
 			break;
 		}
 
-	} while (choice!=2);
+	} while (choice != 2);
 
 	system("pause");
 	return 0;

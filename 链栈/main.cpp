@@ -80,7 +80,7 @@ int main() {
 			cout << "Invaild choice!\n";
 			break;
 		}
-	} while (choice!=7);
+	} while (choice != 7);
 
 	system("pause");
 	return 0;

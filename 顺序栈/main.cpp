@@ -71,11 +71,11 @@ int main() {
 	for (int i = 0; i < 4; i++) {
 		int temp = 0;
 		cin >> temp;
-		t.Push(temp);		
+		t.Push(temp);
 	}
 	cout << "Õ»¶¥ÔªËØÎª£º" << t.GetTop();
 
-	 
+
 
 
 	return 0;

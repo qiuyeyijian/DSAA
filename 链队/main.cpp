@@ -81,7 +81,7 @@ int main() {
 			break;
 		case 6:
 			if (q.QueueEmpty())
-				cout << "队空"<<endl;
+				cout << "队空" << endl;
 			else
 			{
 				cout << "队不空" << endl;
